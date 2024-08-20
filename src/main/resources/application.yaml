@@ -1,0 +1,12 @@
+spring:
+    datasource:
+        url: jdbc:sqlserver://localhost:1434;databaseName=quizz;encrypt=true;trustServerCertificate=true
+        username: sa
+        password: TranNam@gmail.com
+        driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    jpa:
+        hibernate:
+            ddl-auto: update
+        show-sql: true
+        
+                

@@ -1,3 +1,8 @@
+server:
+  port: 8088
+  servlet:
+    context-path: "/quizz"
+
 spring:
     datasource:
         url: jdbc:sqlserver://localhost:1434;databaseName=quizz;encrypt=true;trustServerCertificate=true
@@ -6,7 +11,7 @@ spring:
         driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
     jpa:
         hibernate:
-            ddl-auto: update
+            ddl-auto: none
         show-sql: true
         
                 

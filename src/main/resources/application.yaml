@@ -14,4 +14,7 @@ spring:
             ddl-auto: none
         show-sql: true
         
+
+jwt:
+  signerKey: "IWdlRhVTKZibLJKJjrnPN4pq1PWx69HZAJ3xl2aPSWbDQHbwlJLiqzAZPihOAL+7"        
                 

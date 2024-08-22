@@ -8,7 +8,8 @@ import lombok.Getter;
 @Getter
 public enum ErrorCode {
     USER_EXISTED(1002, "User existed",  HttpStatus.BAD_REQUEST),
-    USER_NOT_EXISTED(1005,"User not existed", HttpStatus.NOT_FOUND);
+    USER_NOT_EXISTED(1005,"User not existed", HttpStatus.NOT_FOUND),
+    UNAUTHENTICATED(1006, "unauthenticated",  HttpStatus.UNAUTHORIZED);
     
     private int code;
     private String message;

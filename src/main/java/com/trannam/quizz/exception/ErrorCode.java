@@ -9,7 +9,9 @@ import lombok.Getter;
 public enum ErrorCode {
     USER_EXISTED(1002, "User existed",  HttpStatus.BAD_REQUEST),
     USER_NOT_EXISTED(1005,"User not existed", HttpStatus.NOT_FOUND),
-    UNAUTHENTICATED(1006, "unauthenticated",  HttpStatus.UNAUTHORIZED);
+    UNAUTHENTICATED(1006, "unauthenticated",  HttpStatus.UNAUTHORIZED),
+    KYTHI_EXISTED(1008, "KyThi existed",  HttpStatus.BAD_REQUEST),
+    KYTHI_NOT_EXISTED(1009,"kythi not existed", HttpStatus.NOT_FOUND);
     
     private int code;
     private String message;

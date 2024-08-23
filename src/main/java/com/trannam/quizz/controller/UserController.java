@@ -29,7 +29,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @PostMapping("/creatUser")
+    @PostMapping("/createUser")
     ApiResponse<UserResponse> creatUser(@RequestBody @Valid UserCreationRequest user) {
         return ApiResponse.<UserResponse>builder()
                 .code(1000)
@@ -54,7 +54,7 @@ public class UserController {
                 .build();
     }
 
-    @PutMapping("update/{userId}")
+    @PutMapping("/update/{userId}")
     ApiResponse<UserResponse> updateUser(@PathVariable Long userId, @RequestBody UserUpdateRequest request) {
         return ApiResponse.<UserResponse>builder()
                 .code(1000)

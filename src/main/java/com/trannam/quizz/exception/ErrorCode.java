@@ -11,7 +11,9 @@ public enum ErrorCode {
     USER_NOT_EXISTED(1005,"User not existed", HttpStatus.NOT_FOUND),
     UNAUTHENTICATED(1006, "unauthenticated",  HttpStatus.UNAUTHORIZED),
     KYTHI_EXISTED(1008, "KyThi existed",  HttpStatus.BAD_REQUEST),
-    KYTHI_NOT_EXISTED(1009,"kythi not existed", HttpStatus.NOT_FOUND);
+    KYTHI_NOT_EXISTED(1009,"kythi not existed", HttpStatus.NOT_FOUND),
+    MONTHI_EXISTED(1010, "Monthi existed",  HttpStatus.BAD_REQUEST),
+    MONTHI_NOT_EXISTED(1011,"Monthi not existed", HttpStatus.NOT_FOUND);
     
     private int code;
     private String message;
